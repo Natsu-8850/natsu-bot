@@ -2,13 +2,18 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const bot = new Discord.Client();
 
-const token = "NDMyNDQ0MjUzNjk2OTUwMjc5.Dau6nw.o1DTk5qjRPN_Og031lc8yhNUmFo";
+const token = 
 const prefix = "%";
 
 client.login(token);
 
 client.on("ready", () => {
 	console.log(`Logged in as ${client.user.tag}!`);
+});
+
+bot.on('ready', {} => {
+	console.log('Bot Launched')
+	bot.user.setGame("Use %help for help")
 });
 
 client.on("message", message => {
@@ -360,10 +365,6 @@ bot.on('message', (message) => {
 		   }
 });
 
-bot.on('ready', {} => {
-	console.log('Bot Launched')
-	bot.user.setGame("Use %help for help")
-});
 
-bot.login('NDMyNDQ0MjUzNjk2OTUwMjc5.Dau6nw.o1DTk5qjRPN_Og031lc8yhNUmFo');
+
 client.login(process.env.BOT_TOKEN);

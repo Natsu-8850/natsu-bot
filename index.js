@@ -2,7 +2,7 @@ const Discord = require("discord.js");
 const client = new Discord.Client();
 const bot = new Discord.Client();
 
-const token = 
+const token =('NDMyNDQ0MjUzNjk2OTUwMjc5.Dau6nw.o1DTk5qjRPN_Og031lc8yhNUmFo'); 
 const prefix = "%";
 
 client.login(token);

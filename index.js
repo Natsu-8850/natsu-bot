@@ -360,6 +360,7 @@ bot.on('message', (message) => {
 		   }
 });
 
+bot.user.setGame("Use %help for help")
 
 bot.login('NDMyNDQ0MjUzNjk2OTUwMjc5.Dau6nw.o1DTk5qjRPN_Og031lc8yhNUmFo');
 client.login(process.env.BOT_TOKEN);

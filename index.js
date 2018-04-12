@@ -11,11 +11,6 @@ client.on("ready", () => {
 	console.log(`Logged in as ${client.user.tag}!`);
 });
 
-bot.on('ready', {} => {
-	console.log('Bot Launched')
-	bot.user.setGame("Use %help for help")
-});
-
 client.on("message", message => {
 	if (message.author.bot || message.author.id == client.user.id || !message.content.startsWith(prefix)) return;
 
@@ -366,5 +361,5 @@ bot.on('message', (message) => {
 });
 
 
-
+bot.login('NDMyNDQ0MjUzNjk2OTUwMjc5.Dau6nw.o1DTk5qjRPN_Og031lc8yhNUmFo');
 client.login(process.env.BOT_TOKEN);
